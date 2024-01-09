@@ -1,0 +1,180 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Chi Tiết</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="navbar navbar-fixed-top navbar-inverse">
+                <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand"><img src="../img/logo.jpg" style="width:120px; margin-bottom: 5px;"/></a>   
+                </div>
+                <div class="navbar-collapse collapse" id="main-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../html/TrangChu.html">Trang Chủ</a></li>
+                        <li><a href="../html/TinTuc.html">Tin Tức</a></li>
+                        <li><a href="#" data-toggle="dropdown">Danh Mục<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/DanhMuc1.html">Áo Khoác</a></li>
+                        <li class="driver"></li>
+                        <li><a href="../html/DanhMuc2.html">Áo Sơ Mi</a></li>
+                        <li class="driver"></li>
+                        <li><a href="../html/DanhMuc3.html">Váy/Đầm</a></li>
+                        <li class="driver"></li>
+                        <li><a href="../html/DanhMuc4.html">Áo Thun</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="../html/LienHe.html">Liên hệ</a></li>
+                    <li><a href="../html/ThanhToan.html">Thanh Toán</a></li>
+                    <li><a href="../html/dangky.html">Đăng ký</a></li>
+                    <li><a href="../html/GioHang.html">Giỏ Hàng </a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+              </form>
+                <ul class="navbar navbar-nav navbar-right ">
+                    <a href="../html/dangnhap.html" class="navbar-btn navbar-right btn_dangnhap">Đăng Nhập</a>
+                </ul>
+                </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+        <main role="main"> 
+            <div class="container mt-4"> 
+                <div id="thongbao" class="alert alert-danger d-none face" role="alert"> 
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"> 
+                        <span aria-hidden="true">×</span> 
+                    </button>
+                </div> 
+                <div class="card"> 
+                    <div class="container-fliud"> 
+                        <form name="frmsanphamchitiet" id="frmsanphamchitiet" method="post" action=""> 
+                            <input type="hidden" name="sp_ma" id="sp_ma" value="5"> 
+                            <input type="hidden" name="sp_ten" id="sp_ten" value="Vay_Nu"> 
+                            <input type="hidden" name="sp_gia" id="sp_gia" value="10990000.00"> 
+                            <input type="hidden" name="hinhdaidien" id="hinhdaidien" value="Ao_Thun.jpg"> 
+                            <div class="wrapper row"> 
+                                <div class="preview col-md-6"> 
+                                    <div class="preview-pic tab-content"> 
+                                        <div class="tab-pane" id="pic-1"> 
+                                            <img src="../img/ao-thun-nam-thoi-trang.jpg" > 
+                                        </div> 
+                                        <div class="tab-pane" id="pic-2"> 
+                                            <img src="../img/ao_thun_nu_soc_den.jpg"> 
+                                        </div> 
+                                        <div class="tab-pane" id="pic-3"> 
+                                            <img src="../img/Ao_Thun_Nu_Soc_Ngang.jpg"> 
+                                        </div> 
+                                        <div class="tab-pane active" id="pic-4"> 
+                                            <img src="../img/A0_Thun_Nam_Ngan_Tay.jpg"> 
+                                        </div> 
+                                    </div> 
+                                <div class="thumbnao">
+                                    <ul class="preview-thumbnail nav nav-tabs"> 
+                                        <li class="active"> 
+                                            <a data-target="#pic-1" data-toggle="tab" class=""> 
+                                                <img src="../img/ao-thun-nam-thoi-trang.jpg"> 
+                                            </a> 
+                                        </li> 
+                                        <li class=""> 
+                                            <a data-target="#pic-2" data-toggle="tab" class=""> 
+                                                <img src="../img/ao_thun_nu_soc_den.jpg"> 
+                                            </a> 
+                                        </li> 
+                                        <li class=""> 
+                                            <a data-target="#pic-3" data-toggle="tab" class=""> 
+                                                <img src="../img/Ao_Thun_Nu_Soc_Ngang.jpg"> 
+                                            </a> 
+                                        </li> 
+                                        <li class=""> 
+                                            <a data-target="#pic-4" data-toggle="tab" class="active"> 
+                                                <img src="../img/A0_Thun_Nam_Ngan_Tay.jpg"> 
+                                            </a> 
+                                        </li> 
+                                    </ul> 
+                                </div>
+                            </div> 
+                        </div> 
+                    </form> 
+                    <div class="valion">
+                        <div class="valion_nac">
+                            <div class="details col-md-6"> 
+                                <h3 class="product-title">
+                                    Áo Thun Nam Nữ
+                                </h3> 
+                                <div class="rating"> 
+                                    <div class="stars"> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star"></span> 
+                                        <span class="fa fa-star"></span> 
+                                    </div> 
+                                    <span class="review-no">200 lượt đánh giá</span> 
+                                </div> 
+                                <p class="product-description">Áo Thun Chính Hãng </p> 
+                                <small class="text-muted">Giá cũ: <s> <span>450.000đ</span></s></small> 
+                                <h4 class="price">Giá hiện tại: <span>350.000đ</span></h4> 
+                                <p class="vote"><strong>100%</strong>hàng <strong>Chất lượng</strong>, đảm bảo <strong>Uy tín</strong>!</p> 
+                                <h5 class="sizes">sizes: 
+                                    <span class="size" data-toggle="tooltip" title="cỡ Nhỏ">S</span> 
+                                    <span class="size" data-toggle="tooltip" title="cỡ Trung bình">M</span> 
+                                    <span class="size" data-toggle="tooltip" title="cỡ Lớn">L</span> 
+                                    <span class="size" data-toggle="tooltip" title="cỡ Đại">XL</span> 
+                                </h5> 
+                                <h5 class="colors">colors: 
+                                    <span class="color orange not-available" data-toggle="tooltip" title="Hết hàng"></span> 
+                                    <span class="color green"></span> <span class="color blue"></span> 
+                                </h5>
+                                <div class="form-group"> 
+                                    <label for="soluong">Số lượng đặt mua:</label> 
+                                    <input type="number" class="form-control" id="soluong" name="soluong"> 
+                                </div> 
+                                <div class="action"> 
+                                    <a class="add-to-cart btn btn-default" id="btnThemVaoGioHang">Thêm vào giỏ hàng</a> 
+                                    <a class="like btn btn-default" href="#"><span class="fa fa-heart"></span></a> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div>
+                    <div class="valnax"> 
+                            <h3>Thông tin chi tiết về Sản phẩm</h3> 
+                            <div class="row"> 
+                                <div class="col"> 
+                                    - Áo thun có lối thiết kế đẹp mắt, tạo phong cách trẻ trung, sang trọng, phù hợp với tất cả mọi người. </br>
+                                    - Chất liệu vải cotton mềm mịn, tạo cảm giác thoải mái khi mặc Đường may chỉn chu, tinh tế. tôn nên vẻ đẹp lịch lãm, sang trọng</br>
+                                    * Màu sắc: Dủ các loại màu sắc<br>
+                                    * Chất liệu: cotton(100% từ thiên nhiên)<br>
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+            </main>
+            <section class="footer">
+                    <div class="footer-container">
+                        <div class="footer-text">
+                        </div>
+                        <div class="footer-bottom">
+                            Copyright © Nguyen Duc Huy website 2021
+                        </div>
+                    </div>
+            </section>
+        <script type="text/javascript" src="../javascript/jquery.min.js"></script>
+        <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../javascript/script1.js"></script>
+    </body>
+</html>

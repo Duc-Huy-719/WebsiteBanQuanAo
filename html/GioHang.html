@@ -1,0 +1,145 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Trang Chủ</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav class="navbar navbar-fixed-top navbar-inverse">
+                <div class="container">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand"><img src="../img/logo.jpg" style="width:120px; margin-bottom: 5px;"/></a>   
+                </div>
+                <div class="navbar-collapse collapse" id="main-menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="../html/TrangChu.html">Trang Chủ</a></li>
+                        <li><a href="../html/TinTuc.html">Tin Tức</a></li>
+                        <li><a href="#" data-toggle="dropdown">Danh Mục<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/DanhMuc1.html">Áo Khoác</a></li>
+                        <li class="driver"></li>
+                        <li><a href="../html/DanhMuc2.html">Áo Sơ Mi</a></li>
+                        <li class="driver"></li>
+                        <li><a href="../html/DanhMuc3.html">Váy/Đầm</a></li>
+                        <li class="driver"></li>
+                        <li><a href="../html/DanhMuc4.html">Áo Thun</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="../html/LienHe.html">Liên hệ</a></li>
+                    <li><a href="../html/ThanhToan.html">Thanh Toán</a></li>
+                    <li><a href="../html/dangky.html">Đăng ký</a></li>
+                    <li><a href="../html/GioHang.html">Giỏ Hàng </a></li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+              </form>
+                <ul class="navbar navbar-nav navbar-right ">
+                    <a href="../html/dangnhap.html" class="navbar-btn navbar-right btn_dangnhap">Đăng Nhập</a>
+                </ul>
+                </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+    <h2 class="text-center">Hướng dẫn thiết giao diện trang giỏ hàng bằng Bootstrap</h2>
+    <div class="container"> 
+        <table id="cart" class="table table-hover table-condensed"> 
+            <thead> 
+                <tr> 
+                    <th style="width:50%">Tên sản phẩm</th> 
+                    <th style="width:10%">Giá</th> 
+                    <th style="width:8%">Số lượng</th> 
+                    <th style="width:22%" class="text-center">Thành tiền</th> 
+                    <th style="width:10%"> </th> 
+                </tr>
+            </thead>
+            <tbody><tr> 
+                <td data-th="Product"> 
+                    <div class="row"> 
+                        <div class="col-sm-2 hidden-xs"><img src="../img/dam_trang.jpg" alt="Sản phẩm 1" class="img-responsive" width="100">
+                        </div> 
+                        <div class="col-sm-10"> 
+                            <h4 class="nomargin">Sản phẩm 1</h4> 
+                            <p>Mô tả của sản phẩm 1</p> 
+                        </div> 
+                    </div> 
+                </td> 
+                <td data-th="Price">200.000 đ</td> 
+                <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                </td> 
+                <td data-th="Subtotal" class="text-center">200.000 đ</td> 
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                    </button> 
+                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                    </button>
+                </td> 
+            </tr> 
+            <tr> 
+                <td data-th="Product"> 
+                    <div class="row"> 
+                        <div class="col-sm-2 hidden-xs"><img src="../img/AoThunHong.jpg" alt="Sản phẩm 1" class="img-responsive" width="100">
+                        </div> 
+                        <div class="col-sm-10"> 
+                            <h4 class="nomargin">Sản phẩm 2</h4> 
+                            <p>Mô tả của sản phẩm 2</p> 
+                        </div> 
+                    </div> 
+                </td> 
+                <td data-th="Price">300.000 đ</td> 
+                <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                </td> 
+                <td data-th="Subtotal" class="text-center">300.000 đ</td> 
+                <td class="actions" data-th="">
+                    <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                    </button> 
+                    <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                    </button>
+                </td> 
+            </tr> 
+        </tbody>
+        <tfoot> 
+            <tr class="visible-xs"> 
+                 <td class="text-center">
+                     <strong>Tổng 200.000 đ</strong>
+                </td> 
+            </tr> 
+            <tr> 
+                <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+                </td> 
+                <td colspan="2" class="hidden-xs"> </td> 
+                <td class="hidden-xs text-center"><strong>Tổng tiền 500.000 đ</strong>
+                </td> 
+                <td><a href="http://hocwebgiare.com/" class="btn btn-success btn-block">Thanh toán <i class="fa fa-angle-right"></i></a>
+                </td> 
+            </tr> 
+        </tfoot> 
+    </table>
+</div>
+    <section class="footer">
+        <div class="footer-container">
+            <div class="footer-text">
+            </div>
+            <div class="footer-bottom">
+                Copyright © Nguyen Duc Huy website 2021
+            </div>
+        </div>
+    </section> 
+        <script type="text/javascript" src="../javascript/jquery.min.js"></script>
+        <script type="text/javascript" src="../javascript/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../javascript/script1.js"></script>
+    </body>
+</html>
